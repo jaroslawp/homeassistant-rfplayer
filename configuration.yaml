@@ -1,0 +1,13 @@
+rfplayer:
+    port: /dev/ttyUSB0
+    wait_for_ack: false
+
+sensor:
+  - platform: rfplayer
+
+
+logger:
+  default: info
+  logs:
+    custom_components.rfplayer: debug
+
